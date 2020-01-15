@@ -1,0 +1,18 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+  application:
+    name: ${APPLICATION_NAME:springbootdemo_one}
+  profiles:
+    active: ${ENV:prd},db
+server:
+  port: ${SERVER_PORT:7066}
+
+fastdfs:
+  url: http://192.168.1.235:8240/api
+  host: 192.168.1.235
+  port: 80/
+socket:
+  host: 192.168.1.150
+  port: 9095
